@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply px-4 py-2 bg-raspberry text-white rounded-lg hover:bg-raspberry-dark 
+    transition-colors duration-200 ease-in-out font-medium inline-flex items-center;
+  }
+  
+  .btn-secondary {
+    @apply px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 
+    transition-colors duration-200 ease-in-out font-medium inline-flex items-center;
+  }
+}
+
+:root {
+  --color-raspberry: #E91E63;
+  --color-raspberry-dark: #C2185B;
+}
+
+.text-raspberry {
+  color: var(--color-raspberry);
+}
+
+.bg-raspberry {
+  background-color: var(--color-raspberry);
+}
+
+.hover\:bg-raspberry-dark:hover {
+  background-color: var(--color-raspberry-dark);
+}
+
+.border-raspberry {
+  border-color: var(--color-raspberry);
+}
